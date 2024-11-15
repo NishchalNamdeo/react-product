@@ -6,18 +6,18 @@ export const productContext = createContext();
 const Context = (props) => {
   const [products, setproducts] = useState(null);
 
-  const getproducts = async () => {
-    try {
-      const { data } = await axios("/products");
-      setproducts(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getproducts = async () => {
+  //   try {
+  //     const { data } = await axios("/products");
+  //     setproducts(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  useEffect(() => {
-    getproducts();
-  }, []);
+  // useEffect(() => {
+  //   getproducts();
+  // }, []);
 
 
   return (
